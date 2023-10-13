@@ -21,10 +21,15 @@ These models are small and trainable on CPU. It is straightforward to adapt them
 
 **Data:**
 This model was initially trained with publicly available datasets Capnobase and BIDMC.
+
 Capnobase: Karlen, Walter, et al. "Multiparameter respiratory rate estimation from the photoplethysmogram." IEEE Transactions on Biomedical Engineering 60.7 (2013): 1946-1953.
+
 BIDMC: Pimentel, Marco AF, et al. "Toward a robust estimation of respiratory rate from pulse oximeters." IEEE Transactions on Biomedical Engineering 64.8 (2016): 1914-1923
+
 The Capnobase dataset consists of simultaneously recorded capnography and finger PPG. The BIDMC dataset consists of simultaneously recorded impedance pnuemography and finger PPG.
-The same model has more recently been implemented for in-ear PPG, with a dataset consisting of simultaneously recorded airflow from the lungs and in-ear PPG. These findings were presented at the 45th Engineering in Medicine and Biology conference (EMBC) in Sydney 2023, with the paper: Davies, Harry J, et al. "Feasibility of Transfer Learning from Finger PPG to In-Ear PPG"
+The same model has more recently been implemented for in-ear PPG, with a dataset consisting of simultaneously recorded airflow from the lungs and in-ear PPG. 
+
+These findings were presented at the 45th Engineering in Medicine and Biology conference (EMBC) in Sydney 2023, with the paper: Davies, Harry J, et al. "Feasibility of Transfer Learning from Finger PPG to In-Ear PPG"
 This model is effective at extracting respiratory waveforms from PPG as long as it is trained with a simultaneously recorded PPG as an input and respiration as a training reference.
 
 **Code:**
